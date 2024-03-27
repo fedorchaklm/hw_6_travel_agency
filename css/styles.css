@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #20B2AA;
+  --secondary-color: #024B86;
+  --ternary-color: #00FFFF;
+  --secondary-text-color: #fff;
+}
+
+@font-face {
+  font-family: "Noto Serif SemiCondensed";
+  src: url(../fonts/NotoSerif_SemiCondensed-Italic.ttf);
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Noto Serif SemiCondensed";
+  color: var(--secondary-color);
+}
+
+.header {
+  display: flex;
+  gap: 50px;
+  padding: 10px 12%;
+  background-color: var(--primary-color);
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  font-weight: 700;
+  height: fit-content;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.header__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondary-text-color);
+
+  /* flex: 1; */
+  /* gap: 20px; */
+  /* width: 100%; */
+  /* font-size: 2rem; */
+}
+
+.header__info {
+  display: flex;
+  align-content: center;
+  /* gap: 20px; */
+  width: 100;
+}
+
+.info__phone {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+}
+
+.info__phone > img {
+  width: 15px;
+}
+
+.action-btn {
+  width: 200px;
+  padding: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color)
+}
+
+/* .menu-wrap {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+} */
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__item {
+  /* width: 70%; */
+  position: relative;
+  transition: 2s all;
+}
+
+a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav__item:hover .subnav {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+}
