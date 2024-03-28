@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #20B2AA;
-  --secondary-color: #024B86;
-  --ternary-color: #00FFFF;
+  --primary-color: #20b2aa;
+  --secondary-color: #024b86;
+  --ternary-color: #00ffff;
   --secondary-text-color: #fff;
 }
 
@@ -80,7 +80,7 @@ body {
   white-space: nowrap;
   cursor: pointer;
   background-color: var(--secondary-color);
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
 }
 
 /* .menu-wrap {
@@ -92,7 +92,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .nav__item {
@@ -109,7 +109,15 @@ a:any-link {
 .nav__item:hover .subnav {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  gap: 20px;
+  top: 100%;
+  left: -25%;
+  background-color: var(--primary-color);
+  z-index: 10;
+  padding: 20px 25%;
+  /* border: 1px solid white; */
+  box-shadow: 0 3px 6px 0 rgba(32, 55, 74, 0.2),
+    0 3px 6px 0 rgba(222, 233, 244, 0.6);
 }
 
 .subnav {
@@ -117,5 +125,4 @@ a:any-link {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 9;
 }
