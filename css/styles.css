@@ -126,3 +126,37 @@ a:any-link {
   top: 100%;
   left: 0;
 }
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel__viewport {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel__navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__navigation-list {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 5px solid var(--secondary-text-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
