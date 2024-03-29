@@ -17,10 +17,13 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   display: flex;
   gap: 50px;
   padding: 10px 12%;
   background-color: var(--primary-color);
+  z-index: 1;
 }
 
 .logo-wrap {
@@ -122,6 +125,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.carousel__slide {
+  padding-top: 48px;
+}
+
 .carousel__navigation {
   position: absolute;
   width: 100%;
@@ -203,3 +210,4 @@ body {
   border-radius: 4px;
   background-color: var(--secondary-color);
 }
+
