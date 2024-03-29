@@ -107,6 +107,14 @@ body {
   display: none;
 }
 
+.subnav__item {
+  transition: 0.5s all;
+}
+
+.subnav__item:hover {
+  background-color: var(--secondary-color);
+}
+
 .subnav__link {
   display: block;
   width: fit-content;
@@ -159,7 +167,6 @@ body {
   padding: 10px 15% 50px;
   line-height: 1.5;
   font-size: 1.5rem;
-  text-indent: 30px;
 }
 
 .content__heading > img {
@@ -199,15 +206,12 @@ body {
 }
 
 .content__info > .info__link {
-  width: fit-content;
-  padding: 10px 10%;
-  font-size: 1.2rem;
+  padding: 5px 5%;
+  font-size: 1rem;
   letter-spacing: 1px;
-  font-style: normal;
-  white-space: nowrap;
   font-family: Arial, sans-serif;
   color: var(--secondary-text-color);
   border-radius: 4px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
