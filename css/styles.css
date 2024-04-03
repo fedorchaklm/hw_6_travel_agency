@@ -21,12 +21,14 @@ body {
   width: 100%;
   display: flex;
   gap: 50px;
-  padding: 10px 12%;
+  padding: 0 12%;
   background-color: var(--primary-color);
   z-index: 1;
 }
 
+.action-wrap,
 .logo-wrap {
+  padding: 10px 0;
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -45,9 +47,10 @@ body {
 
 .header__content {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
+  padding-top: 10px;
   color: var(--secondary-text-color);
 }
 
@@ -72,10 +75,11 @@ body {
 .action-btn {
   width: 200px;
   padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
   font-size: 1.5rem;
   letter-spacing: 1px;
   white-space: nowrap;
-  cursor: pointer;
   border-radius: 4px;
   background-color: var(--secondary-color);
   color: var(--secondary-text-color);
@@ -89,6 +93,7 @@ body {
 .nav__item {
   position: relative;
   transition: 2s all;
+  padding-bottom: 10px;
 }
 
 .nav__item:hover .subnav {
@@ -169,10 +174,6 @@ body {
   font-size: 1.5rem;
 }
 
-.content__heading > img {
-  width: 10%;
-}
-
 .content__block {
   display: flex;
   flex-direction: row;
@@ -214,4 +215,3 @@ body {
   border-radius: 4px;
   background-color: var(--primary-color);
 }
-
